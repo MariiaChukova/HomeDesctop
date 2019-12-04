@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Кам’янець-Подільський</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<a href="index.html" ><span class="b1">Beautiful</span><span class="b3">Ukraine</span>
+						
+					</div><!-- //LOGO -->
+					
+					<!-- SEARCH FORM -->
+					<div id="search-form" class="pull-right">
+						<form method="get" action="#">
+							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</form>
+					</div><!-- SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home" >Головна</a></li>
+								<li class="scroll_btn"><a href="#about" >Кам’янець-Подільський</a></li>
+								<li class="scroll_btn"><a href="#projects" >Анімація</a></li>
+								<li class="scroll_btn last"><a href="#contacts" >Контакти</a></li>
+								</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">Дивовижна</p>
+							<p class="title2 captionDelay4 FromTop">чаруюча</p>
+							<p class="title3 captionDelay6 FromTop">фортеця</p>
+							</div>
+						<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft">Натхнення</p>
+							</div>
+					</li>
+					<li class="slide3">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">Неймовірні</p>
+							<p class="title2 captionDelay4 FromTop">краєвиди</p>
+						</div>
+										
+											</li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			
+			<!-- SERVICES -->
+			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+				
+					<!-- ROW -->
+					<div class="row">
+						
+							<a class="services_item" href="javascript:void(0);" >
+								<span> <p>Кам’янець-Подільський – місто, що зберегло дух середньовіччя. Своєрідність і унікальність його полягають у гармонійному поєднанні ландшафту з містобудівною структурою середньовічного міста, в якому військові інженери, використовуючи чудові природні властивості, створили фортифікаційну систему, що не має аналогів у Європі.</p>
+									
+								<p>Кам’янець-Подільський хоч не є обласним центром, проте займає третє місце після Києва та Львова за кількістю пам’яток старовини і культури.</p>
+									
+							    <p>Неабиякий інтерес викликає і унікальний Замковий міст, що сполучає Старе місто із Замковим комплексом. Досі існує немало суперечок щодо його походження. Деякі науковці стверджують, що міст було закладено ще римлянами у II ст. під час походу Траянового війська на Дакію.</p>
+									
+							    <p>До складу Кам’янецької фортеці входять одинадцять башт, кожна з яких має свою назву й історію. Так, наприклад, найвища башта названа Папською тому, що була збудована на кошти, виділені папою римським Юлієм II. Ще її називають Кармелюковою, бо в ній тричі був ув’язнений український народний герой Устим Кармелюк. У Чорній (кутовій) башті знаходиться криниця глибиною 40 м і в діаметрі 5 м, видовбана у скелі. Досі тут збереглося величезне дерев’яне колесо з пристроєм для підняття води на поверхню.</p>
+									
+							    <p>У підземеллях Замкового комплексу відкрито експозиції, що відтворюють сторінки його історії. У західному бастіоні реконструйовано оборону замку 1672 р. під час турецької навали. У східному бастіоні розміщено експозицію, присвячену історії легкої метальної зброї на Поділлі, де відвідувач може вистрілити з арбалета та відчути себе середньовічним воїном. До нашого часу збереглася система ходів і казематів.</p>
+									
+						        <p>Сьогодні за попередньою домовленістю можна стати учасником нічної театралізованої екскурсії по Старій фортеці. Екскурсію у вежах (баштах) і підземеллях фортеці проводить кам’янецький „староста” та його „свита”, які цікавими розповідями, піснями, танцями не лише знайомлять екскурсантів з історією замку та озброєнням, а й створюють неповторне відчуття подорожі у часі.</p></span>
+							</a>
+						
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVICES -->
+			
+						
+			
+		</section><!-- //ABOUT -->
+		
+		
+		<!-- PROJECTS -->
+		<section id="projects" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2>Анімація</h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/1.jpg" alt="" />
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/2.jpg" alt="" />
+								
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/3.jpg" alt="" />
+								
+							</div>
+							
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/4.jpeg" alt="" />
+								
+							</div>
+							
+						</div>
+					</div><!-- //work4 -->
+					
+					<!-- work5 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/5.jpg" alt="" />
+								
+							</div>
+						</div>
+					</div><!-- //work5 -->
+					
+                    <!-- work6 -->
+                    <div class="item">
+	                    <div class="work_item">
+	                        <div class="work_img">
+			                    <img src="images/works/6.jpg" width="119%" alt="" />
+			                </div>
+	                    </div>
+                    </div><!-- //work6 -->
+
+                    <!-- work7 -->
+                        <div class="item">
+	                        <div class="work_item">
+		                        <div class="work_img">
+			                       <img src="images/works/7.jpg" alt="" />
+			
+		                        </div>
+	                        </div>
+                        </div><!-- //work7 -->
+
+                   <!-- work8 -->
+                        <div class="item">
+	                        <div class="work_item">
+		                        <div class="work_img">
+			                        <img src="images/works/8.jpg" alt="" />
+		                        </div>
+	                        </div>
+                        </div><!-- //work8 -->
+
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+			
+			
+		</section><!-- //PROJECTS -->
+		
+		
+
+	
+	
+	
+	<!-- FOOTER -->
+	<footer style="position:static;/* left:auto; */bottom:auto;transform: none;-webkit-transform: none;"> 
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+			
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<h4><b>Про</b> нас</h4>
+					<p>Чукова Марія</p>
+					<p>Студентка факультету інформаційних технологій НУБіП України, група ЕКК-19003м</p>
+					<p>Викладач: Мокрієв М.В.</p>
+					
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+
+	</footer><!-- //FOOTER -->
+	
+	
+	<!-- MAP -->
+	<div id="map">
+		<a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+	</div><!-- //MAP -->
+
+</div>
+</body>
+</html>
